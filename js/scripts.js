@@ -1,34 +1,30 @@
 //UI logic
-window.onload = function() {
+window.addEventListener("load", function() {
   let form = document.querySelector("form");
-  form.onsubmit = function(event) {
-    event.preventDefault();
+  form.addEventListener("submit", getResult);
+});
+
+function getResult(event) {
+  event.preventDefault();
 
     const userInputValue = document.getElementById("userInput").value;
+    const resultDisplay= countNumbers(parseInt(userInputValue));
   
-    document.querySelector("p#resultValues").innerText = resultArray;
+    document.querySelector("p#resultDisplay").innerText = resultDisplay;
     document.querySelector("div#results").removeAttribute("class");
   }
-}
+
 
 //Business Logic
 
 //const resultArray = userInputValue.split();
 
 function countNumbers (countTo) {
- 
-    const resultArray = [];
-    for (let i = 0; i <= countTo; i += countBy) {
-      resultArray.push(i);
-    }
-    return resultArray;
+  const resultArray = [];
+  for (let i = 0; i <= countTo; i += 1) {
+    resultArray.push(i);
   }
+  return resultArray;
+}
 
-//function countUp (countTo) {
-   //let resultArrayNew = [];
-   //for(let i = 1; i<=userInputValue; i+= 1) {
-   // resultArray.push(i);
-    
- //  }
-  // return resultArray
-//}
+
