@@ -10,7 +10,7 @@ function getResult(event) {
     const imputNum = document.getElementById("userInput").value;
     const resultArray= countNumbers(inputNum);
     const p =document.querySelector("p#resultValues");
-    document.querySelector("p#resultValues").innerText = userNumbersArray;
+    document.querySelector("p#resultValues").innerText = resultArray;
     document.querySelector("div#results").removeAttribute("class");
   }
 
@@ -37,7 +37,6 @@ function countNumbers (inputNum) {
   }
   })
 
-  console.log(userNumbersArray, resultArray);
   return userNumbersArray;
 
 }
