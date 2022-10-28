@@ -23,10 +23,19 @@ function countNumbers (countTo) {
   const resultArray = [];
   for (let i = 0; i <= countTo; i += 1) {
     resultArray.push(i);
-    
-
   }
   return resultArray;
 }
 
+function checkForWords(word1,resultArray) 
+  const numberArray = countNumbers(resultArray);
+  let displayArray = [];
+numberArray.forEach(function (element))
 
+{
+  if (word1 === resultArray) {
+    return true;
+  }
+  return false;
+  }
+}
