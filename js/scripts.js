@@ -8,9 +8,9 @@ function getResult(event) {
   event.preventDefault();
 
     const userInputValue = document.getElementById("userInput").value;
-    const resultDisplay= countNumbers(parseInt(userInputValue));
+    const resultArray= countNumbers(parseInt(userInputValue));
     const p =document.querySelector("p#resultValues");
-    document.querySelector("p#resultValues").innerText = resultDisplay;
+    document.querySelector("p#resultValues").innerText = resultArray;
     document.querySelector("div#results").removeAttribute("class");
   }
 
@@ -27,15 +27,3 @@ function countNumbers (countTo) {
   return resultArray;
 }
 
-function checkForWords(word1,resultArray) 
-  const numberArray = countNumbers(resultArray);
-  let displayArray = [];
-numberArray.forEach(function (element))
-
-{
-  if (word1 === resultArray) {
-    return true;
-  }
-  return false;
-  }
-}

@@ -1,10 +1,8 @@
 Describe: wordSubstitute()
 
-Test: "It should return ingeters from 1 up to the number entered by user"
-Code:
-const countTo = "12";
-countNumbers(countTo)
-Expected Output: = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+Test: "It should return an array of numbers from 0 to the user's inputted number"
+Code: wordSubstitute(5);
+Expected Output: [0, 1, 2, 3, 4, 5]
 
 Test: "it should return 'beep' if the number starts with a 1"
 Code:
