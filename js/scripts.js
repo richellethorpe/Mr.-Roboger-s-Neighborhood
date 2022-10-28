@@ -7,17 +7,16 @@ window.addEventListener("load", function() {
 function getResult(event) {
   event.preventDefault();
 
-    const userInputValue = document.getElementById("userInput").value;
-    const resultArray= countNumbers(userInputValue);
+    const imputNum = document.getElementById("userInput").value;
+    const resultArray= countNumbers(inputNum);
     const p =document.querySelector("p#resultValues");
-    document.querySelector("p#resultValues").innerText = resultArray;
+    document.querySelector("p#resultValues").innerText = userNumbersArray;
     document.querySelector("div#results").removeAttribute("class");
   }
 
 
 //Business Logic
 
-//const resultArray = userInputValue.split();
 
 function countNumbers (inputNum) {
   const userNumbersArray = [];
@@ -42,13 +41,3 @@ function countNumbers (inputNum) {
   return userNumbersArray;
 
 }
-
-
-function replaceWords(imputNum){
-  
-  resultArrayString.forEach(function (element) {
-    if (element.includes (1))
-    return element.replace(element, "beep")
-  })
-}
-//
