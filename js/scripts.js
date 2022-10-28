@@ -23,6 +23,8 @@ function countNumbers (countTo) {
   const resultArray = [];
   for (let i = 0; i <= countTo; i += 1) {
     resultArray.push(i);
+    
+
   }
   return resultArray;
 }
