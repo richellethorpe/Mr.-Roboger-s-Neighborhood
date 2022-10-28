@@ -9,8 +9,8 @@ function getResult(event) {
 
     const userInputValue = document.getElementById("userInput").value;
     const resultDisplay= countNumbers(parseInt(userInputValue));
-  
-    document.querySelector("p#resultDisplay").innerText = resultDisplay;
+    const p =document.querySelector("p#resultValues");
+    document.querySelector("p#resultValues").innerText = resultDisplay;
     document.querySelector("div#results").removeAttribute("class");
   }
 
