@@ -7,11 +7,12 @@ window.addEventListener("load", function() {
 function getResult(event) {
   event.preventDefault();
 
-    const imputNum = document.getElementById("userInput").value;
-    const resultArray= countNumbers(inputNum);
-    const p =document.querySelector("p#resultValues");
-    document.querySelector("p#resultValues").innerText = resultArray;
-    document.querySelector("div#results").removeAttribute("class");
+  const userInputNumber = document.getElementById("userInput").value;
+  console.log(userInputNumber);
+  const resultArray = countNumbers(userInputNumber);
+  document.querySelector("p#resultValues").innerText = resultArray;
+  document.querySelector("div#results").removeAttribute("class");
+  console.log(resultArray);
   }
 
 
@@ -19,7 +20,8 @@ function getResult(event) {
 
 
 function countNumbers (inputNum) {
-  const userNumbersArray = [];
+
+  let userNumbersArray = [];
   let resultArray = [];
   for (let i = 0; i <= inputNum; i += 1) {
     userNumbersArray.push(i.toString());
@@ -27,16 +29,16 @@ function countNumbers (inputNum) {
   }
   userNumbersArray.forEach( function (element){
     if(element.includes("3")){
-    resultArray.push("Won't you be my neighbor?");
+    resultArray.push(" Won't you be my neighbor?");
     }else if (element.includes("2")){
-    resultArray.push("Beep!");
+    resultArray.push(" Boop!");
     }else if (element.includes("1")){
-    resultArray.push("Boop!");
+    resultArray.push(" Beep!");
     }else {
-    resultArray.push(element)
+    resultArray.push((" " + element))
   }
   })
-
-  return userNumbersArray;
+  return resultArray;
+  
 
 }
