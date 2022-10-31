@@ -15,7 +15,7 @@ This is an application that allows the user to recieve a unique response result 
 ## Secifications
 Describe: userNumbersArray()
 
-Test: "It should return an array with a 0 if the number 0 is entered"
+Test: "It should return an array with a 0 if the number 0 is entered" <br/>
 Code: userNumbersArray(0);
 Expected Output: 0
 
@@ -31,15 +31,15 @@ Test: "It should return an array [0, 'Beep!', 'Boop!', 'Won't you be my neighbor
 Code: userNumbersArray(3);
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'
 
-Test: "It should replace any number that contains 1 with 'Beep!'"
+Test: "It should replace ANY number that contains 1 with 'Beep!'"
 Code: userNumbersArray(10);
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!'"
 
-Test: "It should replace any number that contains 2 with 'Boop!'"
+Test: "It should replace ANY number that contains 2 with 'Boop!'"
 Code: userNumbersArray(12);
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!'
 
-Test: "It should replace any number that contains 3 with 'Won't you be my neighbor?'"
+Test: "It should replace ANY number that contains 3 with 'Won't you be my neighbor?'"
 Code: userNumbersArray(13);
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?'
 
