@@ -32,7 +32,7 @@ Code: userNumbersArray(3);<br/>
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'<br/>
 
 Test: "It should replace ANY number that contains 1 with 'Beep!'"<br/>
-Code: userNumbersArray(10);
+Code: userNumbersArray(10);<br/>
 Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!'"<br/>
 
 Test: "It should replace ANY number that contains 2 with 'Boop!'"<br/>
