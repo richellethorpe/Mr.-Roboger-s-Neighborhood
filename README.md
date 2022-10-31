@@ -16,36 +16,36 @@ This is an application that allows the user to recieve a unique response result 
 Describe: userNumbersArray()
 
 Test: "It should return an array with a 0 if the number 0 is entered" <br/>
-Code: userNumbersArray(0);
-Expected Output: 0
+Code: userNumbersArray(0);<br/>
+Expected Output: 0<br/>
 
-Test: "It should return an array [0, 'Beep!'] if the 1 is entered"
-Code: userNumbersArray(1);
-Expected Output: 0, 'Beep!'
+Test: "It should return an array [0, 'Beep!'] if the 1 is entered"<br/>
+Code: userNumbersArray(1);<br/>
+Expected Output: 0, 'Beep!'<br/>
 
-Test: "It should return an array [0, 'Beep!', 'Boop!'] if the number 2 is entered"
-Code: userNumbersArray(2);
-Expected Output: 0, 'Beep!', 'Boop!'
+Test: "It should return an array [0, 'Beep!', 'Boop!'] if the number 2 is entered"<br/>
+Code: userNumbersArray(2);<br/>
+Expected Output: 0, 'Beep!', 'Boop!'<br/>
 
-Test: "It should return an array [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'] if the number 3 is entered"
-Code: userNumbersArray(3);
-Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'
+Test: "It should return an array [0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'] if the number 3 is entered"<br/>
+Code: userNumbersArray(3);<br/>
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?'<br/>
 
-Test: "It should replace ANY number that contains 1 with 'Beep!'"
+Test: "It should replace ANY number that contains 1 with 'Beep!'"<br/>
 Code: userNumbersArray(10);
-Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!'"
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!'"<br/>
 
-Test: "It should replace ANY number that contains 2 with 'Boop!'"
-Code: userNumbersArray(12);
-Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!'
+Test: "It should replace ANY number that contains 2 with 'Boop!'"<br/>
+Code: userNumbersArray(12);<br/>
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!'<br/>
 
-Test: "It should replace ANY number that contains 3 with 'Won't you be my neighbor?'"
-Code: userNumbersArray(13);
-Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?'
+Test: "It should replace ANY number that contains 3 with 'Won't you be my neighbor?'"<br/>
+Code: userNumbersArray(13);<br/>
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?'<br/>
 
-Test: "It should replace the number that contains 2 AND 3 with 'Won't you be my neighbor?'"
-Code: userNumbersArray(23);
-Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Boop!', 'Boop!', 'Boop!', 'Won't you be my neighbor?'
+Test: "It should replace the number that contains 2 AND 3 with 'Won't you be my neighbor?'"<br/>
+Code: userNumbersArray(23);<br/>
+Expected Output: 0, 'Beep!', 'Boop!', 'Won't you be my neighbor?', 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Boop!', 'Boop!', 'Boop!', 'Won't you be my neighbor?'<br/>
 
 
 ## Setup/Installation Requirements
